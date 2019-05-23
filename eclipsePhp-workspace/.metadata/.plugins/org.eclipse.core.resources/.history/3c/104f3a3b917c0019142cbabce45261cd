@@ -1,0 +1,16 @@
+<?php
+
+$cidade = "Brasilia";
+$idade = 21;
+
+echo 'Olá cidade de ' . $cidade;
+
+echo "\n";
+
+echo "Minha idade é $idade anos \n" ;
+
+echo PHP_EOL
+
+echo 'Olá cidade de ' . $cidade . PHP_EOL;
+
+echo "Minha idade é $idade anos \n" ;

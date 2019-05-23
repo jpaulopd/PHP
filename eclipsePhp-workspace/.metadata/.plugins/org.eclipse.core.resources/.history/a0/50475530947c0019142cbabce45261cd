@@ -1,0 +1,16 @@
+<?php
+
+$idade = 17;
+
+echo "Você só pode entrar se tiver a partir de 18 anos ou ";
+echo "a partir de 16, se estiver acompanhado." . PHP_EOL;
+
+if ($idade >= 18) {
+    echo "Voce tem $idade anos. Pode entrar";
+} else {
+    echo "Você só tem $idade anos. Você não pode entrar.";
+}
+
+echo PHP_EOL;
+
+echo "Adeus!";

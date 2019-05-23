@@ -1,0 +1,10 @@
+<?php
+
+$cidade = "Brasilia";
+$idade = 21;
+
+echo 'Olá cidade de ' . $cidade;
+
+echo '\n';
+
+echo "Minha idade é  $idade  anos \n" ;

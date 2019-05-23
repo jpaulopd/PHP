@@ -1,0 +1,7 @@
+<?php
+//Comentario em uma linha
+/* Comentarios
+ * de varias linhas
+ */
+
+echo "Ola mundo";
