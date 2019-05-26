@@ -1,4 +1,9 @@
-<?php include("cabecalho.php"); ?>
+<?php include("cabecalho.php"); 
+include("conecta.php");
+include("banco-categoria.php");
+
+$categorias = listaCategorias($conexao);
+?>
 
 <h1>Formulário de cadastro</h1>
 <form action="adiciona-produto.php" method="post">
@@ -19,13 +24,19 @@
         </tr>
 
         <tr>
+            <td></td>
+            <td><input type="checkbox" name="usado" value="true"> Usado</td>
+        </tr>
 
+        <tr>
             <td>Categoria</td>
             <td>
-                <input type="radio" name="categoria_id" value="1">Esporte</br>
-                <input type="radio" name="categoria_id" value="2">Escolar</br>
-                <input type="radio" name="categoria_id" value="3">Mobilidade</br>
-            </td>
+                <select name="categoria_id">
+                    <?php foreach($categorias as $categoria) : ?>
+                         <option value="<?=$categoria['id']?>"><?=$categoria['nome']?></option>
+                    <?php endforeach ?>
+                </select>
+            </td>   
         </tr>
 
         <tr>
